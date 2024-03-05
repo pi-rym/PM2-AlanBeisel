@@ -29,5 +29,15 @@ const tempData = [
     poster:
       "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
   },
+  {
+    title: "Pulp Fiction",
+    year: 1994,
+    director: "Quentin Tarantino",
+    duration: "2h 34min",
+    genre: ["Crime", "Black Comedy", "Drama"],
+    rate: 8.9,
+    poster:
+      "https://www.tuposter.com/pub/media/catalog/product/cache/71d04d62b2100522587d43c930e8a36b/f/i/file_41_67.jpg",
+  },
 ];
 

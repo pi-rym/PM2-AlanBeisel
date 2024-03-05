@@ -1,59 +1,86 @@
 body {
     
-    background-image: url(https://images.unsplash.com/photo-1616530940355-351fabd9524b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
-    background-position: center; /* Centra la imagen en el cuerpo */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-image: url(https://images.unsplash.com/photo-1604975701397-6365ccbd028a?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     height: 100vh;
     margin: 0;
     padding: 0;
 }
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de la barra de navegación */
+    background-color: rgba(224, 62, 62, 0.5); 
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding: 10px 20px;;
     width: 100%; 
     z-index: 1000; 
 
-  }
+}
 
-  .imgbar1 img {
-    width: 100px; /* Ajustar el tamaño de las imágenes según sea necesario */
+
+.imgbar1 img {
+    width: 111px;
     height: auto;
-  }
-  
-  .navbar-menu {
+}
+.imgbar1 h2 {
+    font-size: 21px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.navbar-menu {
+    justify-content: center;
+    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
+    text-align: center;
   }
   
-  .navbar-menu li {
+.navbar-menu li {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
     background-color: #ffffff;
     border-radius: 5px;
     display: inline-block;
-    margin-right: 100px; /* Espaciado entre elementos del menú */
+    margin-right: 20px; 
+    margin-left: 0;
+    
+  }
+  .navbar-menu li:first-child {
+    margin-left: 0; 
   }
   
   .navbar-menu li:last-child {
     margin-right: 0; /* Eliminar margen derecho del último elemento */
-  }
-  
-  .navbar-menu li a {
+}
+
+.navbar-menu li a {
     text-decoration: none;
     color: #000000; /* Color del texto del menú */
     font-weight: bold; /* Ajustar según sea necesario */
-    transition: color 0.3s ease; /* Transición suave del color del texto */
-  }
-  
-  .navbar-menu li a:hover {
+    transition: color 0.6 ease;
+}
+
+.navbar-menu li a:hover {
     color: #ff6600; /* Cambiar color al pasar el ratón */
+}
+
+
+.titulo {
+    text-align: center;
+    margin-top: 50px; /* Ajusta según sea necesario */
   }
 
- .movie-card {
+.titulo h1 {
+    border-radius: 5px;
+    font-size: 40px;
+    background-color: #ffffff;
+}
+
+.movie-card {
     text-align: center;
     border: 1px solid #ddd; /* Borde delgado */
     background-color: #ffffff;
@@ -62,9 +89,16 @@ body {
     margin-bottom: 20px; /* Margen inferior entre tarjetas */
     width: 300px; /* Ancho fijo de la tarjeta */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
- }
+    transition: transform 0.3 ease;
+}
 
- .movie-card img {
+.movie-card:hover {
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); 
+    transition: box-shadow 0.3s ease; 
+    transform: scale(1.05);
+}
+
+.movie-card img {
     padding-top: 10px;
     max-width: 55%; /* La imagen no puede superar el ancho de la tarjeta */
     height: auto; /* Altura automática para mantener la proporción */
@@ -84,6 +118,8 @@ body {
 
 .div2 {
     display: flex;
-    justify-content: space-between;
-    margin-top: 70px;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 120px;
+    padding: 20px;
 }
