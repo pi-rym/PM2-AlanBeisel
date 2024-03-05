@@ -1,0 +1,89 @@
+body {
+    
+    background-image: url(https://images.unsplash.com/photo-1616530940355-351fabd9524b?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el cuerpo */
+    background-position: center; /* Centra la imagen en el cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo de la barra de navegación */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%; 
+    z-index: 1000; 
+
+  }
+
+  .imgbar1 img {
+    width: 100px; /* Ajustar el tamaño de las imágenes según sea necesario */
+    height: auto;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar-menu li {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 100px; /* Espaciado entre elementos del menú */
+  }
+  
+  .navbar-menu li:last-child {
+    margin-right: 0; /* Eliminar margen derecho del último elemento */
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #000000; /* Color del texto del menú */
+    font-weight: bold; /* Ajustar según sea necesario */
+    transition: color 0.3s ease; /* Transición suave del color del texto */
+  }
+  
+  .navbar-menu li a:hover {
+    color: #ff6600; /* Cambiar color al pasar el ratón */
+  }
+
+ .movie-card {
+    text-align: center;
+    border: 1px solid #ddd; /* Borde delgado */
+    background-color: #ffffff;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 20px; /* Margen inferior entre tarjetas */
+    width: 300px; /* Ancho fijo de la tarjeta */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+ }
+
+ .movie-card img {
+    padding-top: 10px;
+    max-width: 55%; /* La imagen no puede superar el ancho de la tarjeta */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 6px; /* Bordes redondeados para la imagen */
+}
+
+.movie-card h3 {
+    font-size: 1.2em; /* Tamaño del título */
+    margin-top: 8px; /* Margen superior */
+    margin-bottom: 6px; /* Margen inferior */
+}
+
+.movie-card p {
+    margin: 4px 0; /* Margen superior e inferior */
+    font-size: 0.9em; /* Tamaño del texto */
+}
+
+.div2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}

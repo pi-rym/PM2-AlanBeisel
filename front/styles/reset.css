@@ -1,0 +1,129 @@
+/* CSS Reset */
+
+/* Box sizing border-box por defecto */
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Eliminar margen y relleno por defecto */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl, dd, figure, blockquote, fieldset, legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ajustes de fuente */
+body {
+    font-family: Arial, sans-serif; /* Cambia la fuente según tus preferencias */
+    font-size: 16px; /* Tamaño base de la fuente */
+    line-height: 1.5; /* Espaciado de línea */
+}
+
+/* Eliminar estilos de lista */
+ul, ol {
+    list-style: none;
+}
+
+/* Ajustes de hipervínculos */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Eliminar decoración de texto subrayado en hipervínculos */
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+/* Establecer márgenes y rellenos uniformes para elementos */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Establecer márgenes y rellenos uniformes para elementos */
+img, video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Establecer bordes uniformes para elementos */
+img, video, iframe, fieldset {
+    border: 0;
+}
+
+/* Añadir regla para hacer que los elementos 'details' sean accesibles en Edge y Firefox */
+summary {
+    display: list-item;
+}
+
+/* Eliminar los estilos predeterminados del campo de formulario */
+button, input, select, textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    line-height: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Establecer cursor predeterminado para botones y elementos interactivos */
+button, [type="button"], [type="reset"], [type="submit"], [role="button"], [role="link"], [tabindex] {
+    cursor: pointer;
+}
+
+/* Establecer bordes uniformes para elementos interactivos */
+button, input, select, textarea {
+    border-radius: 0;
+}
+
+/* Eliminar estilos de resaltado de selección en elementos interactivos */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Eliminar estilos de resaltado de selección en elementos WebKit */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+/* Eliminar estilos de resaltado de selección en elementos WebKit */
+textarea {
+    resize: vertical;
+}
+
+/* Establecer estilos de cursor para elementos de formulario */
+[disabled] {
+    cursor: not-allowed;
+}
+
+/* Establecer reglas para elementos ocultos */
+[hidden] {
+    display: none !important;
+}
+
+/* Eliminar bordes en Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* Eliminar estilos de foco no deseados en algunos navegadores */
+:focus:not(:focus-visible) {
+    outline: none;
+}
