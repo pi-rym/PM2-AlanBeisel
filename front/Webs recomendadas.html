@@ -5,22 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <title>Document</title>
   </head>
   <body>
-    
-      <nav class="navbar">
+    <header>
+      <div class="navbar">
         <div class="imgbar1">
           <img src="https://img.freepik.com/vector-premium/ilustracion-vectorial-dibujada-mano-gafas-3d_685085-11052.jpg?w=1380" alt="deco">
           <h2>CINE FAN</h2>
         </div>
+        <nav>
           <ul class="navbar-menu">
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="Mejores peliculas 2023.html">Mejores peliculas 2023</a></li>
-            <li><a href="Historia del cine.html"</a>Historia del cine</li>
-            <li><a href="index.html">Pagina principal</a></li>
-        </ul>
-      </nav>
-    <script src="./scripts/tempData.js"></script>
+            <li><a href="Historia del cine.html">Historia del cine</a></li>
+            <li><a href="Webs recomendadas.html">Web recomendadas</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <script src="./scripts/index.js"></script>
+    <script>
+      var url = window.location.href;
+      var links = document.querySelectorAll('.navbar-menu a');
+      links.forEach(function(link) {
+          if (url === link.href) {
+              link.classList.add('activa');
+          }
+      });
+  </script>
   </body>
 </html>

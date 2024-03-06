@@ -1,5 +1,4 @@
 body {
-    
     background-image: url(https://images.unsplash.com/photo-1604975701397-6365ccbd028a?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover; 
     background-position: center; 
@@ -7,17 +6,39 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
+    font-family: 'Bebas Neue', cursive;
 }
-.navbar {
-    background-color: rgba(224, 62, 62, 0.5); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;;
-    width: 100%; 
-    z-index: 1000; 
 
+header {
+    background-color: rgba(201, 70, 70, 0.333)
 }
+
+.navbar {
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding-right: 22%;
+}
+
+
+
+.navbar a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+    transition: color 0.3s;
+   
+}
+
+
+
+.navbar a:hover {
+	color: #8b8b8b;
+}
+
+.navbar a.activa {
+    color: white;
+  }
 
 
 .imgbar1 img {
@@ -25,30 +46,28 @@ body {
     height: auto;
 }
 .imgbar1 h2 {
-    font-size: 21px;
-    background-color: #ffffff;
-    border-radius: 3px;
+font-family: 'Bebas Neue', cursive;
+font-weight: normal;
+font-size: 38px;
+background-color: #ffffff;
+border-radius: 3px;
 }
 
 .navbar-menu {
-    justify-content: center;
-    width: 100%;
     list-style: none;
     margin: 0;
     padding: 0;
-    text-align: center;
   }
   
 .navbar-menu li {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    display: inline-block;
-    margin-right: 20px; 
-    margin-left: 0;
-    
-  }
+        display: inline;
+        margin-right: 20px ;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: normal;
+        font-size: 40px;
+    }
+
+
   .navbar-menu li:first-child {
     margin-left: 0; 
   }
@@ -61,23 +80,26 @@ body {
     text-decoration: none;
     color: #000000; /* Color del texto del menú */
     font-weight: bold; /* Ajustar según sea necesario */
-    transition: color 0.6 ease;
+    transition: background-color 0.3s; 
 }
 
-.navbar-menu li a:hover {
-    color: #ff6600; /* Cambiar color al pasar el ratón */
-}
+.lista li a:hover {
+  background-color: #555;
+} 
+
 
 
 .titulo {
     text-align: center;
-    margin-top: 50px; /* Ajusta según sea necesario */
   }
 
 .titulo h1 {
     border-radius: 5px;
+    background-color: #ffffffa2;
+    display: inline-block;
+    margin: 0;
     font-size: 40px;
-    background-color: #ffffff;
+    margin-top: 180px;
 }
 
 .movie-card {
