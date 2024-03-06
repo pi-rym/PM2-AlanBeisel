@@ -51,6 +51,7 @@ font-weight: normal;
 font-size: 38px;
 background-color: #ffffff;
 border-radius: 3px;
+padding-left: 4px;
 }
 
 .navbar-menu {
@@ -97,9 +98,11 @@ border-radius: 3px;
     border-radius: 5px;
     background-color: #ffffffa2;
     display: inline-block;
-    margin: 0;
     font-size: 40px;
     margin-top: 180px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .movie-card {
