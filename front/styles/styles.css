@@ -106,9 +106,10 @@ padding-left: 4px;
 }
 
 .movie-card {
+    background-color: #9d6b6b9a;
     text-align: center;
     border: 1px solid #ddd; /* Borde delgado */
-    background-color: #ffffff;
+    
     border-radius: 8px; /* Bordes redondeados */
     padding: 10px; /* Espaciado interno */
     margin-bottom: 20px; /* Margen inferior entre tarjetas */
@@ -137,6 +138,7 @@ padding-left: 4px;
 }
 
 .movie-card p {
+    
     margin: 4px 0; /* Margen superior e inferior */
     font-size: 0.9em; /* Tamaño del texto */
 }
@@ -145,6 +147,180 @@ padding-left: 4px;
     display: flex;
     justify-content: center;
     gap: 50px;
-    margin-top: 120px;
+    margin-top: 50px;
     padding: 20px;
+
+}
+
+footer {
+    position: relative; /* Cambiar a posición relativa */
+    z-index: 1; /* Asegurar que el footer esté por encima del contenido */
+    clear: both; /* Asegura que el footer se mantenga en la parte inferior */
+    background-color: #5f4343d1; /* Cambia el color de fondo según tu diseño */
+    color: #fff; /* Cambia el color del texto según tu diseño */
+    padding: 20px; /* Ajusta el relleno según sea necesario */
+    margin-top: 50px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
+
+@rhino: #323b40;
+@rhinoMid: #4f585e;
+@teal: #0096a1;
+@tealMid: #0ebac7;
+@red: #fc625c;
+@amber: #fdbc40;
+@green: #34c748;
+@offWhite: #e9eaea;
+
+html {
+  background: @rhinoMid;
+}
+
+div.browser {
+  background: #fff url(http://www.s4c.cymru/temp/unsplash-kitsune-4.jpg)
+    no-repeat;
+  background-size: cover;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.4),
+    0 12px 24px -6px rgba(0, 0, 0, 0.4), 0 24px 64px 12px rgba(0, 0, 0, 0.25);
+  color: @rhino;
+  font-family: "Source Sans Pro", helvetica;
+  overflow: hidden;
+  letter-spacing: -0.05em;
+  margin: 5% auto;
+  max-width: 1200px;
+  min-width: 320px;
+  min-height: 600px;
+  padding-bottom: 10%;
+  position: relative;
+  width: 90%;
+  div.chrome {
+    background: @rhinoMid;
+    height: 40px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    > a {
+      border-radius: 12px;
+      display: block;
+      float: left;
+      height: 12px;
+      margin: 13px 4px;
+      width: 12px;
+      &:first-child {
+        margin-left: 13px;
+      }
+      &.red {
+        background: @red;
+      }
+      &.amber {
+        background: @amber;
+      }
+      &.green {
+        background: @green;
+      }
+    }
+    div.url {
+      background: #cf7a7a94;
+      border-radius: 4px;
+      height: 24px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      top: 8px;
+      width: 70%;
+    }
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 200;
+    margin: 0;
+    padding: 80px 40px 10px;
+  }
+  h2 {
+    font-size: 48px;
+    line-height: 1em;
+    max-width: 16em;
+    margin: 0;
+    padding: 0 40px;
+  }
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  div.social-media-links {
+    background: @rhino;
+    overflow: hidden;
+    padding-bottom: 4px;
+    text-align: center;
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      display: inline;
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      border-bottom: 0px solid rgba(0, 0, 0, 0.95);
+      border-radius: 4px;
+      box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0),
+        0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0),
+        0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0),
+        0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0);
+      display: inline-block;
+      height: 30px;
+      padding: 20px;
+      position: relative;
+      transition: 0.2s ease-in;
+      width: 30px;
+      svg {
+        left: 20px;
+        position: absolute;
+        top: 20px;
+        height: 30px;
+        width: 30px;
+        &.glow {
+          path,
+          circle {
+            fill: rgba(214, 90, 90, 0.436);
+          }
+        }
+        path,
+        circle {
+          fill: @teal;
+          transition: 0.2s ease-in;
+        }
+      }
+    }
+    a:hover {
+      transform: translateY(-4px);
+      box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1),
+        0 6px 8px rgba(0, 0, 0, 0.05), 0 24px 24px rgba(0, 0, 0, 0.05),
+        0 36px 36px rgba(0, 0, 0, 0.05), 0 64px 64px rgba(0, 0, 0, 0.15),
+        0 64px 128px rgba(0, 0, 0, 0.15), 0 86px 8px 6px fadeout(@tealMid, 75),
+        0 83px 4px 0px fadeout(@tealMid, 5);
+      svg {
+        &.glow {
+          filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+          filter: blur(2px);
+          path,
+          circle {
+            fill: fadeout(@tealMid, 40);
+          }
+        }
+        path,
+        circle {
+          fill: @tealMid;
+        }
+      }
+    }
+  }
 }
