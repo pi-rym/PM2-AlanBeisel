@@ -1,102 +1,86 @@
 body {
-    background-image: url(https://images.unsplash.com/photo-1604975701397-6365ccbd028a?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    font-family: 'Bebas Neue', cursive;
+background-image: url(https://images.unsplash.com/photo-1604975701397-6365ccbd028a?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-size: cover; 
+background-position: center; 
+background-repeat: no-repeat; 
+height: 100vh;
+margin: 0;
+padding: 0;
+font-family: 'Bebas Neue', cursive;
 }
 
-header {
-    background-color: rgba(201, 70, 70, 0.333)
+.nav {
+height: 100px;
+}
+
+a {
+font-family: 'Bebas Neue', sans-serif;
+font-size: 20px;
+color: #000000;
 }
 
 .navbar {
-    display: flex;
-	justify-content: space-between;
-    align-items: center;
-    padding-right: 22%;
+background-color: #924c4c6f;
 }
-
-
-
-.navbar a {
-	color: #AAA;
-	text-decoration: none;
-	margin-right: 20px;
-    transition: color 0.3s;
-   
+.imgbar1 {
+display: flex;
 }
-
-
-
-.navbar a:hover {
-	color: #8b8b8b;
-}
-
-.navbar a.activa {
-    color: white;
-  }
-
 
 .imgbar1 img {
-    width: 111px;
-    height: auto;
-}
+width: 140px;
+height: 100px;
+} 
+
 .imgbar1 h2 {
+display:inline-block;
 font-family: 'Bebas Neue', cursive;
 font-weight: normal;
-font-size: 38px;
+font-size: 82px;
 background-color: #ffffff;
 border-radius: 3px;
-padding-left: 4px;
+
 }
 
-.navbar-menu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-.navbar-menu li {
-        display: inline;
-        margin-right: 20px ;
-        font-family: 'Bebas Neue', cursive;
-        font-weight: normal;
-        font-size: 40px;
-    }
-
-
-  .navbar-menu li:first-child {
-    margin-left: 0; 
-  }
-  
-  .navbar-menu li:last-child {
-    margin-right: 0; /* Eliminar margen derecho del último elemento */
+#color {
+background-color: #fff;
+border-radius: 3px;
 }
 
-.navbar-menu li a {
-    text-decoration: none;
-    color: #000000; /* Color del texto del menú */
-    font-weight: bold; /* Ajustar según sea necesario */
-    transition: background-color 0.3s; 
+header {
+background-color: rgba(201, 70, 70, 0.333)
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding-right: 22%;
+}
+
+.navbar a {
+text-decoration: none;
+margin-right: 50px;
+transition: color 0.3s;
+}
+
+.navbar a:hover {
+color: #5f5f5f;
 }
 
 .lista li a:hover {
-  background-color: #555;
-} 
+background-color: #555;
+}  */
 
 
 
 .titulo {
-    text-align: center;
-  }
+text-align: center;
+}
 
 .titulo h1 {
+    font-family: 'Bebas Neue', cursive;
     border-radius: 5px;
-    background-color: #ffffffa2;
+    background-color: #f8adada2;
     display: inline-block;
     font-size: 40px;
     margin-top: 180px;
@@ -105,46 +89,51 @@ padding-left: 4px;
     padding-right: 15px;
 }
 
-.movie-card {
+.card-body {
+    font-family: 'Bebas Neue', cursive;
     background-color: #9d6b6b9a;
     text-align: center;
-    border: 1px solid #ddd; /* Borde delgado */
-    
-    border-radius: 8px; /* Bordes redondeados */
-    padding: 10px; /* Espaciado interno */
-    margin-bottom: 20px; /* Margen inferior entre tarjetas */
-    width: 300px; /* Ancho fijo de la tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 300px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     transition: transform 0.3 ease;
 }
 
-.movie-card:hover {
+
+.card:hover {
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.3); 
     transition: box-shadow 0.3s ease; 
     transform: scale(1.05);
 }
 
-.movie-card img {
-    padding-top: 10px;
-    max-width: 55%; /* La imagen no puede superar el ancho de la tarjeta */
-    height: auto; /* Altura automática para mantener la proporción */
-    border-radius: 6px; /* Bordes redondeados para la imagen */
+.card-img-top {
+    padding-top: 5px; 
+    height: auto; 
+    border-radius: 6px; 
 }
 
-.movie-card h3 {
-    font-size: 1.2em; /* Tamaño del título */
-    margin-top: 8px; /* Margen superior */
-    margin-bottom: 6px; /* Margen inferior */
-}
 
-.movie-card p {
+.card-text {
     
-    margin: 4px 0; /* Margen superior e inferior */
-    font-size: 0.9em; /* Tamaño del texto */
+    margin: 4px 0; 
+    font-size: 1.1rem; 
+}
+
+.seccion2 {
+    display: block;
+    align-items: center;
+
+
+}
+.link-peli{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #000000;
 }
 
 .div2 {
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
     gap: 50px;
     margin-top: 50px;
@@ -153,12 +142,11 @@ padding-left: 4px;
 }
 
 footer {
-    position: relative; /* Cambiar a posición relativa */
-    z-index: 1; /* Asegurar que el footer esté por encima del contenido */
-    clear: both; /* Asegura que el footer se mantenga en la parte inferior */
-    background-color: #5f4343d1; /* Cambia el color de fondo según tu diseño */
-    color: #fff; /* Cambia el color del texto según tu diseño */
-    padding: 20px; /* Ajusta el relleno según sea necesario */
+    z-index: 1; 
+    clear: both; 
+    background-color: #5f4343d1; 
+    color: #fff; 
+    padding: 20px; 
     margin-top: 50px;
 }
 
@@ -252,7 +240,7 @@ div.browser {
 footer {
   bottom: 0;
   left: 0;
-  position: absolute;
+  position: relative;
   right: 0;
   div.social-media-links {
     background: @rhino;
