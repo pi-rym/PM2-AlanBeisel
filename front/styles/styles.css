@@ -152,18 +152,6 @@ footer {
 
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
 
-@rhino: #323b40;
-@rhinoMid: #4f585e;
-@teal: #0096a1;
-@tealMid: #0ebac7;
-@red: #fc625c;
-@amber: #fdbc40;
-@green: #34c748;
-@offWhite: #e9eaea;
-
-html {
-  background: @rhinoMid;
-}
 
 div.browser {
   background: #fff url(http://www.s4c.cymru/temp/unsplash-kitsune-4.jpg)
@@ -173,19 +161,7 @@ div.browser {
   border-bottom-left-radius: 4px;
   box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.4),
     0 12px 24px -6px rgba(0, 0, 0, 0.4), 0 24px 64px 12px rgba(0, 0, 0, 0.25);
-  color: @rhino;
-  font-family: "Source Sans Pro", helvetica;
-  overflow: hidden;
-  letter-spacing: -0.05em;
-  margin: 5% auto;
-  max-width: 1200px;
-  min-width: 320px;
-  min-height: 600px;
-  padding-bottom: 10%;
-  position: relative;
-  width: 90%;
   div.chrome {
-    background: @rhinoMid;
     height: 40px;
     left: 0;
     position: absolute;
@@ -247,6 +223,7 @@ footer {
     overflow: hidden;
     padding-bottom: 4px;
     text-align: center;
+  }
     ul {
       margin: 0;
       padding: 0;
@@ -283,7 +260,6 @@ footer {
         }
         path,
         circle {
-          fill: @teal;
           transition: 0.2s ease-in;
         }
       }
@@ -299,16 +275,7 @@ footer {
         &.glow {
           filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
           filter: blur(2px);
-          path,
-          circle {
-            fill: fadeout(@tealMid, 40);
-          }
         }
-        path,
-        circle {
-          fill: @tealMid;
-        }
+        
       }
     }
-  }
-}
