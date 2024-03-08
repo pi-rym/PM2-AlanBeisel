@@ -118,11 +118,6 @@ textarea {
     display: none !important;
 }
 
-/* Eliminar bordes en Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
 /* Eliminar estilos de foco no deseados en algunos navegadores */
 :focus:not(:focus-visible) {
     outline: none;
