@@ -141,141 +141,24 @@ text-align: center;
 
 }
 
-footer {
-    z-index: 1; 
-    clear: both; 
-    background-color: #5f4343d1; 
-    color: #fff; 
-    padding: 20px; 
-    margin-top: 50px;
-}
 
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,300,600,700,900);
-
-
-div.browser {
-  background: #fff url(http://www.s4c.cymru/temp/unsplash-kitsune-4.jpg)
-    no-repeat;
-  background-size: cover;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.4),
-    0 12px 24px -6px rgba(0, 0, 0, 0.4), 0 24px 64px 12px rgba(0, 0, 0, 0.25);
-  div.chrome {
-    height: 40px;
-    left: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-    > a {
-      border-radius: 12px;
-      display: block;
-      float: left;
-      height: 12px;
-      margin: 13px 4px;
-      width: 12px;
-      &:first-child {
-        margin-left: 13px;
-      }
-      &.red {
-        background: @red;
-      }
-      &.amber {
-        background: @amber;
-      }
-      &.green {
-        background: @green;
-      }
-    }
-    div.url {
-      background: #cf7a7a94;
-      border-radius: 4px;
-      height: 24px;
-      left: 50%;
-      position: absolute;
-      transform: translateX(-50%);
-      top: 8px;
-      width: 70%;
-    }
-  }
-  h1 {
-    font-size: 24px;
-    font-weight: 200;
-    margin: 0;
-    padding: 80px 40px 10px;
-  }
-  h2 {
-    font-size: 48px;
-    line-height: 1em;
-    max-width: 16em;
-    margin: 0;
-    padding: 0 40px;
-  }
-}
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
 
 footer {
-  bottom: 0;
-  left: 0;
-  position: relative;
-  right: 0;
-  div.social-media-links {
-    background: @rhino;
-    overflow: hidden;
-    padding-bottom: 4px;
-    text-align: center;
-  }
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      display: inline;
-      margin: 0;
-      padding: 0;
-    }
-    a {
-      border-bottom: 0px solid rgba(0, 0, 0, 0.95);
-      border-radius: 4px;
-      box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0), 0 6px 8px rgba(0, 0, 0, 0),
-        0 24px 24px rgba(0, 0, 0, 0), 0 36px 36px rgba(0, 0, 0, 0),
-        0 64px 64px rgba(0, 0, 0, 0), 0 64px 128px rgba(0, 0, 0, 0),
-        0 120px 0 rgba(0, 0, 0, 0), 0 86px 8px 6px rgba(0, 0, 0, 0);
-      display: inline-block;
-      height: 30px;
-      padding: 20px;
-      position: relative;
-      transition: 0.2s ease-in;
-      width: 30px;
-      svg {
-        left: 20px;
-        position: absolute;
-        top: 20px;
-        height: 30px;
-        width: 30px;
-        &.glow {
-          path,
-          circle {
-            fill: rgba(214, 90, 90, 0.436);
-          }
-        }
-        path,
-        circle {
-          transition: 0.2s ease-in;
-        }
-      }
-    }
-    a:hover {
-      transform: translateY(-4px);
-      box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.1),
-        0 6px 8px rgba(0, 0, 0, 0.05), 0 24px 24px rgba(0, 0, 0, 0.05),
-        0 36px 36px rgba(0, 0, 0, 0.05), 0 64px 64px rgba(0, 0, 0, 0.15),
-        0 64px 128px rgba(0, 0, 0, 0.15), 0 86px 8px 6px fadeout(@tealMid, 75),
-        0 83px 4px 0px fadeout(@tealMid, 5);
-      svg {
-        &.glow {
-          filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
-          filter: blur(2px);
-        }
-        
-      }
-    }
+font-family: 'Bebas Neue', cursive;
+color: white;
+position: fixed;
+bottom: 0;
+width: 100%;
+background-color: #a16262;
+}
+
+.row-1{
+    background-color:#a16262 !important;
+}
+
+.row-2{
+    
+    background-color: #a16262 !important;
+}
+

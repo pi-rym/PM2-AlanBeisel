@@ -34,7 +34,7 @@
                         <a class="nav-link fs-1" href="Mejores peliculas 2023.html">Mejores peliculas 2023</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-1" href="Webs recomendadas.html" id="color">Webs recomendadas</a>
+                        <a class="nav-link fs-1" href="createMovies.html" id="color">Agregar pelicula</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-1" href="Historia del cine.html">Historia del cine</a>
@@ -48,15 +48,49 @@
         </div>
     </nav>
     </header>
-    <script src="./scripts/index.js"></script>
-    <script>
-      var url = window.location.href;
-      var links = document.querySelectorAll('.navbar-menu a');
-      links.forEach(function(link) {
-          if (url === link.href) {
-              link.classList.add('activa');
-          }
-      });
-  </script>
+    <div class="titulo">
+        <h1>Agregar pelicula.</h1>
+      </div>
+      <div class="container mt-5" style="background-color: #be7e7e;">
+        <form id="movieForm" class="formulario-peliculas">
+          <div class="form-group">
+            <label for="title">Título:</label>
+            <input type="text" class="form-control" id="title" name="title">
+          </div>
+          <div class="form-group">
+            <label for="year">Año:</label>
+            <input type="number" class="form-control" id="year" name="year">
+          </div>
+          <div class="form-group">
+            <label for="director">Director:</label>
+            <input type="text" class="form-control" id="director" name="director">
+          </div>
+          <div class="form-group">
+            <label for="genre">Género:</label>
+            <input type="text" class="form-control" id="genre" name="genre">
+          </div>
+          <div class="form-group">
+            <label for="rate">Rate:</label>
+            <input type="number" class="form-control" id="rate" name="rate">
+          </div>
+          <div class="form-group">
+            <label for="imageLink">Enlace de Imagen:</label>
+            <input type="text" class="form-control" id="imageLink" name="imageLink">
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <button type="button" class="btn btn-secondary" id="limpiarBtn">Limpiar</button>
+        </form>
+      </div>
+      <footer >
+        <div class="row justify-content-center mt-0 pt-0 row-1 mb-0  px-sm-3 px-2">
+             <div class="col-12">
+                 <div class="row my-4 row-1 no-gutters">
+                     <div class="col-sm-3 col-auto text-center"><small>&#9400; CineFan©</small></div><div class="col-md-3 col-auto "></div><div class="col-md-3 col-auto"></div>
+                     <div class="col  my-auto text-md-left  text-right "> <small> cine.fan@mail.com<span><a href=""><img src="./img/instagram1.svg" class="img-fluid "  width="25"></a></span> <span><a href="#"><img src="./img/facebook 1.svg" class="img-fluid "  width="25"></a></span></small>  </div> 
+                 </div>
+             </div>
+         </div>
+     </footer>
+    <scrip src="./scripts/index.js"></script>
   </body>
 </html>
