@@ -1,20 +1,17 @@
 const renderCards = require("./renderCards")
+const limpiarFormulario = require("./formulario")
 
-$.get("https://students-api.2.us-1.fl0.io/movies", (data) => {
-    renderCards(data);
-});
-
-
-document.getElementById("limpiarBtn").addEventListener("click", limpiarFormulario);
-
-function limpiarFormulario() {
-    document.getElementById("title").value = "";
-    document.getElementById("year").value = "";
-    document.getElementById("director").value = "";
-    document.getElementById("genre").value = "";
-    document.getElementById("rate").value = "";
-    document.getElementById("imageLink").value = "";
+const axios = require("axios");
+async function fetchData() {
+    try {
+        const response = await axios.get('https://students-api.2.us-1.fl0.io/movies');
+        renderCards(response.data);
+    } catch (error) {
+        console.error('Error al realizar la solicitud:', error);
+    }
 }
 
+fetchData();
 
-
+const limpiarBtn = document.getElementById("limpiarBtn");
+limpiarBtn.addEventListener("click", limpiarFormulario);

@@ -1,5 +1,28 @@
 const CarritoCompra = require("../index");
 
+
+describe('CarritoCompra', () => {
+    it('debería tener un constructor', () => {
+        const carrito = new CarritoCompra();
+        expect(carrito.constructor).toBeDefined();
+    });
+
+    it('debería tener un método agregarProducto', () => {
+        const carrito = new CarritoCompra();
+        expect(carrito.agregarProducto).toBeDefined();
+    });
+
+    it('debería tener un método calcularTotal', () => {
+        const carrito = new CarritoCompra();
+        expect(carrito.calcularTotal).toBeDefined();
+    });
+
+    it('debería tener un método aplicarDescuento', () => {
+        const carrito = new CarritoCompra();
+        expect(carrito.aplicarDescuento).toBeDefined();
+    });
+});
+
 describe('CarritoCompra', () => {
     let carrito;
 
@@ -11,13 +34,13 @@ describe('CarritoCompra', () => {
         expect(carrito.productos).toEqual([]);
     });
 
-    test('Agregar un producto al carrito', () => {
+    test('Agregar un producto', () => {
         const producto = { nombre: 'Camiseta', precio: 20 };
         carrito.agregarProducto(producto);
         expect(carrito.productos).toEqual([producto]);
     });
 
-    test('Calcular el total de la compra', () => {
+    test('Calcular el total', () => {
         const obtenerPrecioProducto = jest.fn()
             .mockReturnValueOnce(20)
             .mockReturnValueOnce(30);
@@ -31,7 +54,7 @@ describe('CarritoCompra', () => {
         expect(obtenerPrecioProducto).toHaveBeenNthCalledWith(2, 'Pantalón');
     });
 
-    test('Aplicar un descuento al total de la compra', () => {
+    test('Aplicar un descuento', () => {
         const obtenerPrecioProducto = jest.fn()
             .mockReturnValueOnce(20)
             .mockReturnValueOnce(30);
