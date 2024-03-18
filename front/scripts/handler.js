@@ -3,7 +3,7 @@ const renderCards = require("./renderCards")
 const axios = require("axios");
 async function fetchData() {
     try {
-        const response = await axios.get('https://students-api.up.railway.app/movies');
+        const response = await axios.get('http://localhost:3000/movies');
         renderCards(response.data);
     } catch (error) {
         console.error('Error al realizar la solicitud:', error);
