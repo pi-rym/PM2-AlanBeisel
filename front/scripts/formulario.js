@@ -11,4 +11,3 @@ function limpiarFormulario() {
 
 
 
-module.exports = limpiarFormulario;

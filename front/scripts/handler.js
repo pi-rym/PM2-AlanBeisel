@@ -1,6 +1,8 @@
 const renderCards = require("./renderCards")
 
 const axios = require("axios");
+
+
 async function fetchData() {
     try {
         const response = await axios.get('http://localhost:3000/movies');

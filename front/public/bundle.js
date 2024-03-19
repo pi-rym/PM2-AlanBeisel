@@ -9,23 +9,13 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./scripts/formulario.js":
-/*!*******************************!*\
-  !*** ./scripts/formulario.js ***!
-  \*******************************/
-/***/ ((module) => {
-
-eval("\r\n\r\nfunction limpiarFormulario() {\r\n    document.getElementById(\"title\").value = \"\";\r\n    document.getElementById(\"year\").value = \"\";\r\n    document.getElementById(\"director\").value = \"\";\r\n    document.getElementById(\"genre\").value = \"\";\r\n    document.getElementById(\"rate\").value = \"\";\r\n    document.getElementById(\"imageLink\").value = \"\";\r\n}\r\n\r\n\r\n\r\nmodule.exports = limpiarFormulario;\n\n//# sourceURL=webpack://front/./scripts/formulario.js?");
-
-/***/ }),
-
 /***/ "./scripts/handler.js":
 /*!****************************!*\
   !*** ./scripts/handler.js ***!
   \****************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const renderCards = __webpack_require__(/*! ./renderCards */ \"./scripts/renderCards.js\")\r\n\r\nconst axios = __webpack_require__(/*! axios */ \"./node_modules/axios/dist/browser/axios.cjs\");\r\nasync function fetchData() {\r\n    try {\r\n        const response = await axios.get('http://localhost:3000/movies');\r\n        renderCards(response.data);\r\n    } catch (error) {\r\n        console.error('Error al realizar la solicitud:', error);\r\n    }\r\n}\r\n\r\n\r\n\r\nmodule.exports= fetchData;\n\n//# sourceURL=webpack://front/./scripts/handler.js?");
+eval("const renderCards = __webpack_require__(/*! ./renderCards */ \"./scripts/renderCards.js\")\r\n\r\nconst axios = __webpack_require__(/*! axios */ \"./node_modules/axios/dist/browser/axios.cjs\");\r\n\r\n\r\nasync function fetchData() {\r\n    try {\r\n        const response = await axios.get('http://localhost:3000/movies');\r\n        renderCards(response.data);\r\n    } catch (error) {\r\n        console.error('Error al realizar la solicitud:', error);\r\n    }\r\n}\r\n\r\n\r\n\r\nmodule.exports= fetchData;\n\n//# sourceURL=webpack://front/./scripts/handler.js?");
 
 /***/ }),
 
@@ -35,7 +25,7 @@ eval("const renderCards = __webpack_require__(/*! ./renderCards */ \"./scripts/r
   \**************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const limpiarFormulario = __webpack_require__(/*! ./formulario */ \"./scripts/formulario.js\")\r\nconst fetchData = __webpack_require__(/*! ./handler */ \"./scripts/handler.js\")\r\n\r\nfetchData();\r\n\r\nconst limpiarBtn = document.getElementById(\"limpiarBtn\");\r\nlimpiarBtn.addEventListener(\"click\", limpiarFormulario);\n\n//# sourceURL=webpack://front/./scripts/index.js?");
+eval("\r\nconst fetchData = __webpack_require__(/*! ./handler */ \"./scripts/handler.js\")\r\n// const newMovie = require(\"./newMovie\")\r\n// const limpiarFormulario = require(\"./formulario\")\r\n\r\nfetchData();\r\n\r\n// const addButton = document.getElementById('add-button');\r\n// addButton.addEventListener('click', newMovie);\r\n\r\n// const limpiarBtn = document.getElementById(\"limpiarBtn\");\r\n// limpiarBtn.addEventListener(\"click\", limpiarFormulario);\n\n//# sourceURL=webpack://front/./scripts/index.js?");
 
 /***/ }),
 

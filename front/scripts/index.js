@@ -1,7 +1,12 @@
-const limpiarFormulario = require("./formulario")
+
 const fetchData = require("./handler")
+// const newMovie = require("./newMovie")
+// const limpiarFormulario = require("./formulario")
 
 fetchData();
 
-const limpiarBtn = document.getElementById("limpiarBtn");
-limpiarBtn.addEventListener("click", limpiarFormulario);
+// const addButton = document.getElementById('add-button');
+// addButton.addEventListener('click', newMovie);
+
+// const limpiarBtn = document.getElementById("limpiarBtn");
+// limpiarBtn.addEventListener("click", limpiarFormulario);

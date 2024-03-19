@@ -6,6 +6,11 @@ const movieRouter = Router();
 
 movieRouter.get("/", movieController.getAllMovies);
 
-movieRouter.post("/", validateMovie, movieController.createMovie);
+movieRouter.get("/byName" , movieController.getMovieByTitle)
+
+movieRouter.post("/agregar", validateMovie, movieController.createMovie);
+
+movieRouter.get("/:id", movieController.getMoviesById);
+
 
 module.exports = movieRouter;
