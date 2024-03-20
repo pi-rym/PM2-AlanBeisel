@@ -1,9 +1,9 @@
 const validateMovie = (req, res, next) => {
-    const {title} = req.body;
+    const {title, director, year, duration, rate, genre, poster} = req.body;
 
-    if(!title) {
+    if(!title || !director || !year || !duration || !rate || !genre || !poster) {
         return res.status(400).json({
-            error: "falta el dato del nombre",
+            error: "faltan datos",
         })
     }
         else {
