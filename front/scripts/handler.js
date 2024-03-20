@@ -13,5 +13,4 @@ async function fetchData() {
 }
 
 
-
-module.exports= fetchData;
+module.exports=  fetchData;

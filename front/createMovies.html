@@ -61,7 +61,7 @@
           </div>
           <div class="form-group">
             <label for="year">Año:</label>
-            <input type="number" class="form-control" id="year" name="year">
+            <input type="number" class="form-control" id="year" name="year" min="1800" max="2024">
           </div>
           <div class="form-group">
             <label for="director">Director:</label>
@@ -72,12 +72,43 @@
             <input type="text" class="form-control" id="duration" name="duration">
           </div>
           <div class="form-group">
-            <label for="genre">Género:</label>
-            <input type="text" class="form-control" id="genre" name="genre">
+            <label>Género:</label><br>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="action" name="genre" value="Action">
+                <label class="form-check-label" for="action">Acción</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="comedy" name="genre" value="Comedy">
+                <label class="form-check-label" for="comedy">Comedia</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="checkbox" id="fantasy" name="genre" value="Fantasy">
+              <label class="form-check-label" for="fantasy">Fantasia</label>
           </div>
-          <div class="form-group">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="drama" name="genre" value="Drama">
+            <label class="form-check-label" for="drama">Drama</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="sci-fi" name="genre" value="Sci-fi">
+          <label class="form-check-label" for="sci-fi">Sci-Fi</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="terror" name="genre" value="Terror">
+        <label class="form-check-label" for="terror">Teror</label>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="romance" name="genre" value="Romance">
+          <label class="form-check-label" for="romance">Romance</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="checkbox" id="adventur" name="genre" value="Adventur">
+          <label class="form-check-label" for="adventur">Aventura</label>
+      </div>  
+    </div>
+        </div>
+          <div class="form-group" >
             <label for="rate">Rate:</label>
-            <input type="number" class="form-control" id="rate" name="rate">
+            <input type="number" class="form-control" id="rate" name="rate" step="1.0" requerid>
           </div>
           <div class="form-group">
             <label for="imageLink">Enlace de Imagen:</label>

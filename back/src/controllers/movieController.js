@@ -17,9 +17,14 @@ module.exports = {
     },
 
     getMovieByTitle: async (req, res) =>{
-        const {title} = req.body;
+        const {title} = req.query;
+        try {
         const movie =  await moviesService.findMovieByName(title);
-        res.status(200).json(movie)
+        res.status(200).json(movie);
+        } catch (error) {
+            console.error('Error al buscar peliculas:', error)
+            res.status(500).json({error: 'Erro al buscar peliculas'});
+        }
     },
 
     createMovie: async (req, res) => {

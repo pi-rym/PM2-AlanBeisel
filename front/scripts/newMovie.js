@@ -5,13 +5,12 @@ const limpiarBtn = document.getElementById("limpiarBtn");
 limpiarBtn.addEventListener("click", limpiarFormulario);
 
 
-
 async function newMovie() {
     const titleInput = document.getElementById('title');
     const yearInput = document.getElementById('year');
     const directorInput = document.getElementById('director');
     const durationInput = document.getElementById('duration');
-    const genreInput = document.getElementById('genre');
+    const genreCheckboxes = document.querySelectorAll('input[name="genre"]:checked');
     const rateInput = document.getElementById('rate');
     const imageLinkInput = document.getElementById('imageLink');
 
@@ -19,11 +18,12 @@ async function newMovie() {
     const year = yearInput.value.trim();
     const director = directorInput.value.trim();
     const duration = durationInput.value.trim()
-    const genre = genreInput.value.trim();
+    const genre = Array.from(genreCheckboxes).map(checkbox => checkbox.value);
     const rate = rateInput.value.trim();
-    const imageLink = imageLinkInput.value.trim();
+    const poster = imageLinkInput.value.trim();
 
-    if (!title || !year || !director || !duration || !genre || !rate || !imageLink) {
+
+    if (!title || !year || !director || !duration || genre.length === 0|| !rate || !poster) {
         alert('Por favor, complete todos los campos.');
         return;
     }
@@ -35,8 +35,10 @@ async function newMovie() {
         duration: duration,
         genre: genre,
         rate: rate,
-        imageLink: imageLink
+        poster: poster
     };
+
+    // console.log('Datos de la película:', movieData);
 
     try {
         const response = await fetch('http://localhost:3000/movies/agregar', {
@@ -57,7 +59,7 @@ async function newMovie() {
         yearInput.value = '';
         directorInput.value = '';
         durationInput.value = '';
-        genreInput.value = '';
+        genreCheckboxes.forEach(checkbox => checkbox.checked = false);
         rateInput.value = '';
         imageLinkInput.value = '';
     } catch (error) {
@@ -71,7 +73,10 @@ function limpiarFormulario() {
     document.getElementById("year").value = "";
     document.getElementById("duration").value = "";
     document.getElementById("director").value = "";
-    document.getElementById("genre").value = "";
+    const genreCheckboxes = document.querySelectorAll('input[name="genre"]');
+    genreCheckboxes.forEach(checkbox => checkbox.checked = false);
     document.getElementById("rate").value = "";
     document.getElementById("imageLink").value = "";
+
 }
+
